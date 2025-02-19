@@ -1,0 +1,115 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    color: white;
+}
+body{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background-color: white;
+}
+.box-content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    margin-bottom: 24px;
+    display: flex;
+    gap: 50px;
+}
+h1{
+    color: darkred;
+}
+.more h1{
+    color: white;
+    background-color: darkred;
+    display: none;
+}
+.logo {
+    width: 100px;
+}
+.nav {
+    flex: 1;
+    background-color: darkred;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-top {
+    display: flex;
+    gap: 24px;
+    height: 300px;
+    margin-bottom: 24px;
+}
+.box-left {
+    flex: 1;
+    background-color: darkred;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-right {
+    width: calc(100% / 3 - 16px);
+    background-color: darkred;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-bottom {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+li{
+    background-color: darkred;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 3 - 16px);
+    height: 100px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .box-top{
+        flex-direction: column;
+    }
+    .box-right{
+        height: 40%;
+        width: 100%;
+    }
+    li{
+        width: calc(100% / 2 - 12px);
+        height: 90px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .more{
+        width: 10%;
+    }
+    .more h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav{
+        width: 100%;
+        flex: none;
+        margin-top: -30px;
+    }
+    header {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .box-top,.box-bottom{
+        flex-direction: column;
+    }
+    .box-right,li{
+        width: 100%;
+    }
+    .box-right,.nav{
+        height: 100px;
+    }
+}
