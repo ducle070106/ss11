@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+    padding: 10px;
+}
+html{
+    padding: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background-color: gainsboro;
+}
+.box-content {
+    width: 70%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+p{
+    height: 230px;
+    flex: 1;
+}
+.box-size-small {
+    background-color: lightblue;
+}
+.box-size-small p{
+    height: 100px;
+}
+.red-back{
+    background-color: red;
+}
+.orange-back{
+    background-color: orange;
+}
+.blue-back{
+    background-color: blue;
+}
+.box-size {
+    padding: 24px 0;
+    gap: 24px;
+    display: flex;
+}
+@media screen and (max-width: 768px) {
+    .box-size{
+        flex-direction: column;
+    }
+    p{
+        flex:none;
+    }
+}
