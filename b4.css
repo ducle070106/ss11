@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans", sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background-color: white;
+}
+.box-content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.box-top {
+    margin: 24px 0;
+    display: flex;
+    gap: 12px;
+}
+.box-top p{
+    background-color: orange;
+    flex: 1;
+    height: 50px;
+}
+.box-body-top {
+    margin-bottom: 24px;
+    display: flex;
+    gap: 12px;
+}
+.box-body-top p{
+    background-color: yellowgreen;
+    flex: 1;
+    height: 200px;
+}
+.box-body-bottom {
+    margin-bottom: 24px;
+    display: flex;
+    gap: 12px;
+}
+.box-body-bottom p{
+    background-color: skyblue; 
+    flex: 1;  
+    height: 150px;
+}
+.box-bottom {
+    margin-bottom: 24px;
+    display: flex;
+    gap: 12px;
+}
+.box-bottom p{
+    background-color: gainsboro;
+    flex: 1;
+    height: 100px;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .box-top{
+        flex-direction: column;
+    }
+    .box-top p{
+        flex: none;
+        height: 25px;
+    }
+    .box-body-top{
+        flex-direction: column;
+    }
+    .box-body-top p{
+        flex: none;
+        height: 150px;
+    }
+    .box-body-bottom{
+        flex-direction: column;
+    }
+    .box-body-bottom p{
+        flex: none;
+        height: 50px;
+    }
+    .box-bottom{
+        flex-wrap: wrap;
+    }
+    .box-bottom p{
+        flex: none;
+        height: 50px;
+        width: calc(50% - 6px);
+    }
+}
+@media screen and (max-width: 767px) {
+    .box-top{
+        flex-direction: column;
+    }
+    .box-top p{
+        flex: none;
+        height: 25px;
+    }
+    .box-body-top{
+        flex-direction: column;
+    }
+    .box-body-top p{
+        flex: none;
+        height: 50px;
+    }
+    .box-body-bottom{
+        flex-direction: column;
+    }
+    .box-body-bottom p{
+        flex: none;
+    }
+    .box-bottom{
+        flex-direction: column;
+    }
+    .box-bottom p{
+        flex: none;
+        height: 25px;
+    }
+}
